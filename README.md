@@ -1,24 +1,39 @@
-# cat-app
+# CatApp
 
-## Project setup
-```
+This app shows you a funny cat meme from GIPHY and a random cat fact from [catfact.ninja](https://catfact.ninja).
+
+## Project Setup
+
+Enter the `.env` file in the root directory and replace the value of `VUE_APP_GIPHY_API_KEY` with a valid [GIPHY API](https://developers.giphy.com/docs/api/#quick-start-guide) Key.
+
+```sh
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+### Compile and Hot-Reload for Development
+
+#### Browser
+
+```sh
+npm run dev
 ```
 
-### Compiles and minifies for production
+#### Electron app
+
+```sh
+npm run electron:serve
 ```
+
+### Compile and Minify for Production
+
+#### Browser
+
+```sh
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+#### Electron app
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```sh
+npm run electron:build
+```
